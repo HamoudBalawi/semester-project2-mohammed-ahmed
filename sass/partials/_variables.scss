@@ -1,0 +1,14 @@
+/* $colors: (
+    primary:#F4F3EE,
+    secondray:#262626,
+    backgroundcolor:#E5E5E5,
+    rose-color:#C32C72,
+    white-color: white,
+    grey-color: #8D8D8D,
+    black-color:#262626,
+    light-black-color:#463F3A,
+    
+);
+@function getColors($color) {
+  @return map-get($colors, $color);
+}*/

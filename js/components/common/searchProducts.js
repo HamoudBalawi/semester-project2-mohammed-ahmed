@@ -1,0 +1,21 @@
+ import { renderedProducts } from "../../utils/renderedProducts.js";
+ 
+export function searchProduct(products) {
+// const container = document.querySelector(".elements-container");
+  const search = document.querySelector(".search");
+
+  search.onkeyup = function (event) {
+    const searchValue = event.target.value.trim().toLowerCase();
+  
+    const searchedProducts = products.filter(function (product) {
+      if (product.title.toLowerCase().startsWith(searchValue)) {
+        return true;
+      }
+
+    });
+
+   console.log(searchedProducts)
+  renderedProducts(searchedProducts);
+  };
+}
+

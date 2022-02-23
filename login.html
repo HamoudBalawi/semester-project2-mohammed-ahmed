@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3ffc009c99.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Login to checkout articles" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <label class="hamburger-label" for="hamburger-menu"> <i class="fas fa-3x fa-hamburger"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <label class="close" for="close-menu"><i class="fas fa-3x fa-times-circle"></i></label>
+        <nav>
+            <ul class="menu-container"></ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Login</h1>
+            <form>
+                <div class="message-container"></div>
+                <div>
+                    <label for="username"> Username/email</label>
+                    <input id="username" />
+                </div>
+                <div>
+                    <label for="password"> Password</label>
+                    <input id="password" type="password" />
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/components/common/login.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
