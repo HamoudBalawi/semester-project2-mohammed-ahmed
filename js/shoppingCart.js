@@ -1,6 +1,7 @@
 import { baseUrl } from "./settings/api.js";
 import { fetchStoredProducts} from "./components/storage.js"
-
+import { createMenu } from "./components/common/menu.js";
+createMenu()
 const cartItems = fetchStoredProducts();
 console.log(cartItems)
 const container = document.querySelector(".cart-list");

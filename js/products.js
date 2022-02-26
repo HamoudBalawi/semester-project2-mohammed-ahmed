@@ -1,6 +1,9 @@
 import { baseUrl } from "./settings/api.js";
 import { renderedProducts } from "./utils/renderedProducts.js";
 import { searchProduct } from "./components/common/searchProducts.js";
+import { createMenu } from "./components/common/menu.js";
+
+createMenu()
 
 const url = baseUrl + "/products";
 

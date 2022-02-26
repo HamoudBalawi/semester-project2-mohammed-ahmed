@@ -3,7 +3,7 @@ import { baseUrl } from "../settings/api.js";
 export function renderedProducts(productsResult) {
   const container = document.querySelector(".elements-container");
 
-  container.innerHTML += "";
+  container.innerHTML = "";
 
   productsResult.forEach(function (result) {
 

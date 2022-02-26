@@ -71,6 +71,10 @@ body {
   width: 100%;
 }
 
+button {
+  background-color: #e0fc87;
+}
+
 .shoppingcart {
   max-width: 300px;
   max-height: 300px;

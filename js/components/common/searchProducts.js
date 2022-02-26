@@ -8,7 +8,7 @@ export function searchProduct(products) {
     const searchValue = event.target.value.trim().toLowerCase();
   
     const searchedProducts = products.filter(function (product) {
-      if (product.title.toLowerCase().startsWith(searchValue)) {
+      if (product.title.toLowerCase().includes(searchValue)) {
         return true;
       }
 

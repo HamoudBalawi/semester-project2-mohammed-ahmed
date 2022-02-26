@@ -2,10 +2,11 @@ import { baseUrl } from "./settings/api.js";
 import { renderBanner } from "./utils/renderedBanner.js";
 import { renderItems } from "./utils/renderedItems.js";
 import { renderExclusive } from "./utils/renderedExclusiv.js";
-import { logoutButton } from "./components/common/logout.js";
+import { logoutButton} from "./components/common/menu.js";
+import { createMenu} from "./components/common/menu.js";
 
-
-
+createMenu()
+logoutButton()
 const bannerUrl = baseUrl + "/home";
 
 async function createBanner() {
@@ -34,7 +35,7 @@ async function createProducts() {
 
     renderItems(result);
     renderExclusive(result)
-    logoutButton()
+    
   } catch (error) {
     console.log(error);
   }

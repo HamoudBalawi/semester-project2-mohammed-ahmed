@@ -1,7 +1,10 @@
 import { renderedDetails } from "./utils/renderedDetails.js";
 import { handleClick } from "./components/handleClick.js";
+import { createMenu } from "./components/common/menu.js";
+import { buttonDelete } from "./components/common/deleteProduct.js";
 
-
+createMenu()
+buttonDelete()
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
