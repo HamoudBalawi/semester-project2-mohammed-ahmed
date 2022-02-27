@@ -1,7 +1,7 @@
  import { renderedProducts } from "../../utils/renderedProducts.js";
  
 export function searchProduct(products) {
-// const container = document.querySelector(".elements-container");
+const container = document.querySelector(".elements-container");
   const search = document.querySelector(".search");
 
   search.onkeyup = function (event) {
@@ -12,8 +12,11 @@ export function searchProduct(products) {
         return true;
       }
 
-    });
 
+    });
+    if (searchedProducts.length === 0) {
+      return (container.innerHTML = "No searched products Available");
+    }
    console.log(searchedProducts)
   renderedProducts(searchedProducts);
   };

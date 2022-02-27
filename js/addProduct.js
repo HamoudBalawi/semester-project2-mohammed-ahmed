@@ -28,7 +28,7 @@ function submitForm(event) {
   const priceValue = price.value.trim();
   const descriptionValue = description.value.trim();
   const imageValue = image.value.trim()
- const checkboxValue = checkbox.checked
+  const checkboxValue = checkbox.checked
 
 
  

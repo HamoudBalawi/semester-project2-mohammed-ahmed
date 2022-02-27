@@ -1,8 +1,9 @@
 import {baseUrl} from "./settings/api.js"
-import { getToken } from "./utils/storage.js";
-import createMenu from "./components/common/menu.js";
+import { getToken } from "./components/storage.js";
+import{createMenu} from "./components/common/menu.js";
 import { displayMessage } from "./components/common/displayMessage.js";
-// import { buttonDelete } from "./deleteProduct.js";
+import { buttonDelete} from "./components/common/deleteProduct.js"
+;
 
 const token = getToken();
 if (!token) {
@@ -25,21 +26,31 @@ const idInput = document.querySelector("#id");
 const title = document.querySelector("#title");
 const price = document.querySelector("#price");
 const description = document.querySelector("#description");
-const file = document.querySelector("#file");
+const imageUrl = document.querySelector("#file");
 
 async function fetchProduct() {
   try {
     const response = await fetch(proUrl);
     const result = await response.json();
 
+
+if (!result.image_url) {
+
+result.image_url = result.image.formats.large.url
+} else {
+
+result.image_url =  result.image_url
+}
+
     title.value = result.title;
     price.value = result.price;
     description.value = result.description;
-    file.value = result.file
+    imageUrl.value = result.image_url
     idInput.value = result.id;
-    
+ 
     console.log(result);
-  //  buttonDelete(result.id);
+    buttonDelete(id)
+
   } catch (error) {
     console.log(error);
   }
@@ -55,22 +66,23 @@ function submitForm(event) {
   const titleValue = title.value.trim();
   const priceValue = price.value.trim();
   const descriptionValue = description.value.trim();
-  const fileValue = file.value.trim();
+  const imageUrlValue = imageUrl.value.trim();
   const idValue = id;
 
-  if (titleValue.length === 0 || priceValue.length === 0 || priceValue.length === 0, fileValue.length === 0) {
+  if (titleValue.length === 0 || priceValue.length === 0 || priceValue.length === 0, imageUrlValue.length === 0) {
     return displayMessage("warning", "Please supply proper values", ".message-container");
   }
 
-  updateProduct(titleValue, priceValue, descriptionValue,fileValue, idValue);
+  updateProduct(titleValue, priceValue, descriptionValue,imageUrlValue, idValue);
 }
-async function updateProduct(title, price, description,file, id) {
+async function updateProduct(title, price, description,image_url, id) {
   const apiUrl = baseUrl + "/products/" + id;
   const data = JSON.stringify({
     title: title,
     price: price,
     description: description,
-    file, file
+    image_url, image_url,
+   
   });
 
   const options = {

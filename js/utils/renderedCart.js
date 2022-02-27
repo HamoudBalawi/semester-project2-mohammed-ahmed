@@ -1,4 +1,3 @@
-// import { baseUrl } from "../settings/api.js";
 import { fetchStoredProducts } from "../components/storage.js";
 
 const shopCart = document.querySelector(".shoppingcart");
@@ -36,7 +35,7 @@ const totalPrise = document.querySelector(".total");
     console.log(total);
     cartList.innerHTML += `
                         <div class="cart-item">                      
-                        <a ref="details.html?id=${cartElement.id}" >
+                        <a ref="productdetails.html?id=${cartElement.id}" >
                         <img src="${cartElement.image}"  class="cart-image" "alt="$"/>
                         </a>
                         <h5>${cartElement.title}</h5>
