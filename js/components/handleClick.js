@@ -15,8 +15,9 @@ export function handleClick(){
     const title = event.target.dataset.title;
     const price = event.target.dataset.price;
     const image = event.target.dataset.image;
+    const description = event.target.dataset.description;
     const alt = event.target.dataset.alt
-
+  
     const existingProducts = fetchStoredProducts();
 
   const itemExist = existingProducts.find(function (item) {
@@ -25,7 +26,7 @@ export function handleClick(){
   console.log(itemExist)
 
   if (!itemExist) {
-    const product = { id: id, title: title, price: price, image: image, alt: alt};
+    const product = { id: id, title: title, price: price, image: image, description: description, alt: alt};
     existingProducts.push(product);
     console.log(product)
     

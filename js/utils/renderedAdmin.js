@@ -1,11 +1,11 @@
 import { baseUrl } from "../settings/api.js";
 
-export function renderedProducts(productsResult) {
-  const container = document.querySelector(".elements-container");
+export function renderedAdmin(adminProducts) {
+  const container = document.querySelector(".admin-container");
 
   container.innerHTML = "";
 
-  productsResult.forEach(function (result) {
+  adminProducts.forEach(function (result) {
 
     
 let image = "";
@@ -23,15 +23,14 @@ image =  result.image_url
 }
 
       container.innerHTML += `<div class="product">
-                               <a href="productdetails.html?id=${result.id}">
+                               <a href="editproduct.html?id=${result.id}">
                                 <img src="${image}">
                                 <h4>${result.title}</h4>
                                 <p>Price ${result.price} kr</p>
-                               </a>
-                               <button>Add To Cart</button>
+                                <p>Description${result.description}</p>
+                               <button type="button" class="delete" >Edit</button>
+                                  </a>
                               </div>`;
     
   });
 }
-
-

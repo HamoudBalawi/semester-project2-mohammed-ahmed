@@ -1,10 +1,11 @@
 import { renderedDetails } from "./utils/renderedDetails.js";
 import { handleClick } from "./components/handleClick.js";
 import { createMenu } from "./components/common/menu.js";
-
+import { displayMessage} from "./components/common/displayMessage.js"
+import { logoutButton } from "./components/common/logout.js";
 
 createMenu()
-
+logoutButton()
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -16,14 +17,16 @@ async function fetchProduct() {
   try {
     const response = await fetch(url);
     const details = await response.json();
-    // console.log(details);
+   
     
     renderedDetails(details);
+    
     handleClick()
 
    
   } catch (error) {
     console.log(error);
+   displayMessage("error", "Unknown error occured", ".elements-container");
   }
 }
 fetchProduct();

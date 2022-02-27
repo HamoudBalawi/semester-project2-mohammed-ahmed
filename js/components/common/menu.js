@@ -15,26 +15,11 @@ export  function createMenu() {
    login.style.display ="none";
    
   }else {
-      logout.style.display = "none";
+        logout.style.display = "none";
         addproduct.style.display = "none";
-   login.style.display ="block";
+        login.style.display ="block";     
+           
   }
  
 }
 
-
-import { clearStorage} from "../storage.js"
-
-export function logoutButton(){
-    const button = document.querySelector(".logout");
-  
-    if(button){
-        button.onclick = function (){
-           // clearStorage();
-           localStorage.removeItem("user");
-           localStorage.removeItem("token");
-            location.href = "/";
-        }
-    }
-
-}

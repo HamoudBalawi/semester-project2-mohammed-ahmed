@@ -8,6 +8,9 @@ const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const message = document.querySelector(".message-container");
 
+
+
+
 form.addEventListener("submit", submitForm);
 
 function submitForm(event) {
@@ -46,7 +49,7 @@ async function doLogin(username, password) {
     if (json.user) {
       saveToken(json.jwt);
       saveUser(json.user);
-      location.href = "/";
+      location.href = "admin.html";
     }
 
     if (json.error) {
@@ -57,7 +60,7 @@ async function doLogin(username, password) {
       );
     }
 
-    console.log(json);
+   
   } catch (error) {
     console.log(error);
   }

@@ -2,8 +2,10 @@ import { baseUrl } from "./settings/api.js";
 import { getToken } from "./components/storage.js";
 import { displayMessage } from "./components/common/displayMessage.js";
 import { createMenu } from "./components/common/menu.js";
+import { logoutButton } from "./components/common/logout.js";
 
 createMenu()
+logoutButton()
 
 const token = getToken();
 if (!token) {
@@ -16,6 +18,7 @@ const title = document.querySelector("#title");
 const price = document.querySelector("#price");
 const description = document.querySelector("#description");
 const image = document.querySelector("#file");
+const alt = document.querySelector("#alternative-text")
 const checkbox = document.querySelector("#inlineCheckbox1");
 
 
@@ -24,10 +27,12 @@ function submitForm(event) {
   event.preventDefault();
 
   message.innerHTML = "";
+
   const titleValue = title.value.trim();
   const priceValue = price.value.trim();
   const descriptionValue = description.value.trim();
   const imageValue = image.value.trim()
+  const altValue = alt.value.trim()
   const checkboxValue = checkbox.checked
 
 
@@ -37,9 +42,10 @@ function submitForm(event) {
   console.log("titleValue", priceValue);
   console.log("titleValue", descriptionValue);
   console.log("checkbox", checkboxValue)
+console.log("alt-text", altValue)
 
  
-  if (titleValue.length === 0 || priceValue.length === 0 || descriptionValue.length === 0 || imageValue.length === 0 ) {
+  if (titleValue.length === 0 || priceValue.length === 0 || descriptionValue.length === 0 || imageValue.length === 0 || altValue.length === 0  ) {
     return displayMessage(
       "warning",
       "Please supply proper values",
@@ -47,10 +53,10 @@ function submitForm(event) {
     );
   }
 
-  addProduct(titleValue, priceValue, descriptionValue, imageValue, checkboxValue) ;
+  addProduct(titleValue, priceValue, descriptionValue, imageValue, altValue, checkboxValue) ;
 }
 
-async function addProduct(title, price, description, image, checkbox) {
+async function addProduct(title, price, description, image, alt, checkbox) {
   
   const apiUrl = baseUrl + "/products";
   // let dataForm = new FormData();
@@ -60,6 +66,7 @@ async function addProduct(title, price, description, image, checkbox) {
     price: price,
     description: description,
     image_url: image,
+    alternativeText: alt,
     featured: checkbox,
   });
 

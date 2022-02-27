@@ -32,7 +32,7 @@ const deleteContainer = document.querySelector(".delete-container");
       try {
         const response = await fetch(apiUrl, option);
         const result = await response.json();
-        location.href = "/";
+        location.href = "admin.html";
 
         console.log(result);
       } catch (error) {
