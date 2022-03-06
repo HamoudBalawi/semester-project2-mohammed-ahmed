@@ -5,6 +5,9 @@ i {
   color: $secondary-color;
   font-size: 25px;
 }
+i:hover {
+  color: $red;
+}
 .navbar-light .navbar-nav .active > .nav-link {
   color: $black;
   font-weight: 600;

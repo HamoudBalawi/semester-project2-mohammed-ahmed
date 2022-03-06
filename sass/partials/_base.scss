@@ -57,7 +57,7 @@ body {
     width: 100%;
   }
   .btn-primary:hover {
-    background-color: $accent-color;
+    background-color: $accent-color !important;
     border-color: $accent-color;
   }
 }

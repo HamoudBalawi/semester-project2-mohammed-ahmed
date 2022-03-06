@@ -7,6 +7,10 @@ i {
   font-size: 25px;
 }
 
+i:hover {
+  color: red;
+}
+
 .navbar-light .navbar-nav .active > .nav-link {
   color: black;
   font-weight: 600;
@@ -99,7 +103,7 @@ body {
 }
 
 .exclusive-item .btn-primary:hover {
-  background-color: #535b68;
+  background-color: #535b68 !important;
   border-color: #535b68;
 }
 
@@ -356,10 +360,6 @@ button {
 h1 {
   color: red;
   text-align: center;
-}
-
-h2 {
-  font-size: 19px;
 }
 
 a:link {
