@@ -13,11 +13,11 @@ const deleteContainer = document.querySelector(".delete-container");
   deleteContainer.innerHTML = `<button type="button" class="delete btn">Delete</button>`;
   const button = document.querySelector("button.delete");
 
-
   button.onclick = async function () {
     const deleteThis = confirm("are you sure you want to delete this product?");
 
     if (deleteThis) {
+
       const apiUrl = baseUrl + "/products/" + id;
       const token = getToken();
   
@@ -30,6 +30,7 @@ const deleteContainer = document.querySelector(".delete-container");
       };
 
       try {
+
         const response = await fetch(apiUrl, option);
         const result = await response.json();
         location.href = "admin.html";

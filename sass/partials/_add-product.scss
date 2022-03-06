@@ -12,7 +12,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px #ffffff;
+    background: $background-color;
+    box-shadow: inset 5px 5px 10px $background-color-grey, inset -5px -5px 10px $white;
   }
 }

@@ -40,12 +40,16 @@ if(existingProducts.length === 0){
 }
 
 export function cartCount(count){
+
    const basket = document.querySelector(".basket-item-count");
   basket.innerHTML += `<div class="p-1">${count}</diV>`;
+  
 }
 
   closeButton.onclick = function () {
-shopCart.style.display = "none";
+
+    shopCart.style.display = "none";
+
   }
 
 

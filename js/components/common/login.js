@@ -22,6 +22,7 @@ function submitForm(event) {
   const passwordValue = password.value.trim();
 
   if (usernameValue.length === 0 || passwordValue.length === 0) {
+    
     return displayMessage(
       "warning",
       "Invalid username or password",
@@ -47,12 +48,14 @@ async function doLogin(username, password) {
     const json = await response.json();
 
     if (json.user) {
+
       saveToken(json.jwt);
       saveUser(json.user);
       location.href = "admin.html";
     }
 
     if (json.error) {
+
       displayMessage(
         "warning",
         "Invalid login username or password",

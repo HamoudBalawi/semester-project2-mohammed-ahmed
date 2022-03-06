@@ -39,10 +39,9 @@ export function handleClick(){
     storeProducts(newProducts);
     displayCart(newProducts)
     button.innerHTML = "Add to cart";
-  }
-  
-      };
-    });
+   }
+  };
+ });
 }
 
 

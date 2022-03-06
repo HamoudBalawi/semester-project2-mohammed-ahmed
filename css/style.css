@@ -206,8 +206,8 @@ body {
   border: none;
   border-radius: 5px;
   background: #e0e0e0;
-  -webkit-box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px #ffffff;
-          box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px #ffffff;
+  -webkit-box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px white;
+          box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px white;
 }
 
 .admin-item-details,

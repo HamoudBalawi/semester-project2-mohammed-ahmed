@@ -17,17 +17,16 @@ const url = "http://localhost:1337/products/" + id;
 
 async function fetchProduct() {
   try {
+
     const response = await fetch(url);
     const details = await response.json();
    
      renderedDetails(details);    
      handleClick()
      
-
-   
   } catch (error) {
     console.log(error);
-   displayMessage("error", "Unknown error occured", ".elements-container");
+   displayMessage("error", "Unknown error occured", ".product-details-container");
   }
 }
 fetchProduct();

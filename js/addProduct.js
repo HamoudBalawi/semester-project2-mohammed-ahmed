@@ -13,7 +13,6 @@ if (!token) {
   location.href = "/";
 }
 
-
 const message = document.querySelector(".message-container");
 const form = document.querySelector("form");
 const title = document.querySelector("#title");

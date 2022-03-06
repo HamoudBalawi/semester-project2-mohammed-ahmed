@@ -17,10 +17,12 @@ export  function createMenu() {
    admin.style.display ="block"
    
   }else {
+
         logout.style.display = "none";
         addproduct.style.display = "none";
         login.style.display ="block";     
         admin.style.display ="none" 
+  
   }
  
 }

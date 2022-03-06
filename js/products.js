@@ -13,9 +13,9 @@ const url = baseUrl + "/products";
 
 async function createProducts() {
   try {
+
     const response = await fetch(url);
     const result = await response.json();
-
 
     renderedProducts(result)
     searchProduct(result)
