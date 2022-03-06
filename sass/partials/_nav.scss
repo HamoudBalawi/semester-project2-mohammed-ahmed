@@ -1,0 +1,21 @@
+.navbar-toggler {
+  background-color: $accent-color;
+}
+i {
+  color: $secondary-color;
+  font-size: 25px;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+  color: $black;
+  font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $accent-color;
+}
+
+.login:hover,
+.logout:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: $red;
+  text-decoration: none;
+}

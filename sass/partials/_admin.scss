@@ -1,0 +1,19 @@
+.admin-item-details,
+.admin-item-image {
+  width: 90%;
+}
+.admin-item-image {
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .admin-items {
+    h4 {
+      padding-top: 20px;
+    }
+    .admin-image {
+      width: 100%;
+    }
+  }
+}

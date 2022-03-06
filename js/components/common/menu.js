@@ -3,6 +3,7 @@ import { getUsername } from "../storage.js";
 const logout = document.querySelector(".logout")
 const login = document.querySelector(".login")
 const addproduct =  document.querySelector(".addproduct")
+const admin = document.querySelector(".fa-user")
 
 export  function createMenu() {
     
@@ -13,12 +14,13 @@ export  function createMenu() {
    logout.style.display = "block";
    addproduct.style.display = "block";
    login.style.display ="none";
+   admin.style.display ="block"
    
   }else {
         logout.style.display = "none";
         addproduct.style.display = "none";
         login.style.display ="block";     
-           
+        admin.style.display ="none" 
   }
  
 }

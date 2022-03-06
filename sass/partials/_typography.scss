@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+nav ul li a {
+  font-family: "Saira Condensed", sans-serif;
+}
+p,
+ul li,
+a,
+button {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: $red;
+  text-align: center;
+}
+
+h2 {
+  font-size: 19px;
+}
+a:link {
+  color: $accent-color;
+  text-decoration: none;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+  font-size: 19px;
+}
+a:hover {
+  color: $red;
+}

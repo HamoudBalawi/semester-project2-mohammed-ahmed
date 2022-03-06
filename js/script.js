@@ -5,8 +5,11 @@ import { logoutButton} from "./components/common/logout.js";
 import { createMenu} from "./components/common/menu.js";
 import { renderFeatured } from "./utils/renderedFeatured.js";
 
+
+
 createMenu()
 logoutButton()
+
 
 const bannerUrl = baseUrl + "/home";
 
@@ -33,9 +36,10 @@ async function createProducts() {
     const response = await fetch(url);
     const result = await response.json();
     console.log(result)
+    
    renderExclusive(result)
    renderFeatured(result);
-   
+    
   } catch (error) {
     console.log(error);
   }

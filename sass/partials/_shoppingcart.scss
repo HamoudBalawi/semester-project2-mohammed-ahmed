@@ -1,0 +1,14 @@
+.shoppingcart-items {
+  border: 1px solid $accent-color;
+  border-radius: 2px;
+}
+.cart-image {
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+}
+@media (max-width: 576px) {
+  .cart-image {
+    width: 100%;
+  }
+}

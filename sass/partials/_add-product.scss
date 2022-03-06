@@ -1,0 +1,18 @@
+.add-product-container,
+.edit-container,
+.login-contianer {
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px #ffffff;
+  }
+}

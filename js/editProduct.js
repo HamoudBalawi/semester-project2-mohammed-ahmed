@@ -2,8 +2,8 @@ import {baseUrl} from "./settings/api.js"
 import { getToken } from "./components/storage.js";
 import{createMenu} from "./components/common/menu.js";
 import { displayMessage } from "./components/common/displayMessage.js";
-import { buttonDelete} from "./components/common/deleteProduct.js"
-;
+import { buttonDelete} from "./components/common/deleteProduct.js";
+import { logoutButton } from "./components/common/logout.js";
 
 const token = getToken();
 if (!token) {
@@ -11,6 +11,8 @@ if (!token) {
 }
 
 createMenu();
+logoutButton()
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");

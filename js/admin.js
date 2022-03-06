@@ -27,4 +27,4 @@ async function createProducts() {
 }
 createProducts();
 
-  //  <i class="fa fa-trash" data-id="${details.id}"></i>
+  

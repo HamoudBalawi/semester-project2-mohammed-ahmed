@@ -10,7 +10,7 @@ const id = params.get("id");
 export function buttonDelete() {
 
 const deleteContainer = document.querySelector(".delete-container");
-  deleteContainer.innerHTML = `<button type="button" class="delete">Delete</button>`;
+  deleteContainer.innerHTML = `<button type="button" class="delete btn">Delete</button>`;
   const button = document.querySelector("button.delete");
 
 

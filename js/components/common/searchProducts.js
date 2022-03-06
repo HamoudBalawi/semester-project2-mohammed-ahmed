@@ -11,10 +11,9 @@ const container = document.querySelector(".elements-container");
       if (product.title.toLowerCase().includes(searchValue)) {
         return true;
       }
-
-
     });
-    if (searchedProducts.length === 0) {
+
+     if (searchedProducts.length === 0) {
       return (container.innerHTML = "No searched products Available");
     }
    console.log(searchedProducts)
