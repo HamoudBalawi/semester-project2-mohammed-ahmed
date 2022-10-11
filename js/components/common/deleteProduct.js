@@ -6,10 +6,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-/*   
-* Delete specific data 
-*/
-
 export function buttonDelete() {
 
 const deleteContainer = document.querySelector(".delete-container");
