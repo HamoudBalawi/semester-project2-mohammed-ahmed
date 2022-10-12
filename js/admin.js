@@ -3,7 +3,12 @@ import { createMenu} from "./components/common/menu.js"
 import { searchProduct } from "./components/common/searchProducts.js";
 import { renderedAdmin } from "./utils/renderedAdmin.js";
 import { logoutButton} from "./components/common/logout.js"
+import { getToken } from "./components/storage.js";
 
+const token = getToken();
+if (!token) {
+  location.href = "/";
+}
 
 
 createMenu()
