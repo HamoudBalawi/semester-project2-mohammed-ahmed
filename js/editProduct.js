@@ -5,18 +5,24 @@ import { displayMessage } from "./components/common/displayMessage.js";
 import { buttonDelete } from "./components/common/deleteProduct.js";
 import { logoutButton } from "./components/common/logout.js";
 
-/**
- * createMenu displays menu
- * logoutButton logs out a user
- * getToken gets token from local storage
- */
+// getToken gets token from local storage
+const token = getToken();
+if (!token) {
+  location.href = "/";
+}
+// createMenu displays menu
+createMenu();
+
+// logoutButton logs out a user
+logoutButton();
+
 /**
  * fetchProduct creates innerHTML from an object
- * @param {string} result.title - objects title
- * @param {number} result.price - objects price
- * @param {string} result.description - objects description
- * @param {string} result.image_url - objects image
- * @param {string} result.id - objects id
+ * @property {string} result.title - objects title
+ * @property {number} result.price - objects price
+ * @property {string} result.description - objects description
+ * @property {string} result.image_url - objects image
+ * @property {string} result.id - objects id
  * @example
  * fetch(item)
  * Creates innerHTML that displays
@@ -25,27 +31,6 @@ import { logoutButton } from "./components/common/logout.js";
  * The id of the object
  * The description of the object
  */
-
-/**
- * updateProduct updates an object
- * @param {string} titleValue title of an object
- * @param {number} priceValue price of an object
- * @param {string} descriptionValue description of an object
- * @param {string} imageUrlValue image of an object
- * @param {number} idValue id of an object
- * @example
- * updateProduct(title, price, description, imageUrl, id);
- * Displays a response to the user
- * // Product updated on succuss or an error occured on error
- */
-
-const token = getToken();
-if (!token) {
-  location.href = "/";
-}
-
-createMenu();
-logoutButton();
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -107,6 +92,20 @@ function submitForm(event) {
 
   updateProduct(titleValue, priceValue, descriptionValue, imageUrlValue, idValue);
 }
+
+/**
+ * updateProduct updates an object
+ * @property {string} titleValue title of an object
+ * @property {number} priceValue price of an object
+ * @property {string} descriptionValue description of an object
+ * @property {string} imageUrlValue image of an object
+ * @property {number} idValue id of an object
+ * @example
+ * updateProduct(title, price, description, imageUrl, id);
+ * Displays a response to the user
+ * // Product updated on succuss or an error occured on error
+ */
+
 async function updateProduct(title, price, description, image_url, id) {
   const apiUrl = baseUrl + "/products/" + id;
   const data = JSON.stringify({

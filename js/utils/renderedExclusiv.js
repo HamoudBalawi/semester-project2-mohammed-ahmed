@@ -4,7 +4,7 @@ import { baseUrl } from "../settings/api.js";
  * Creates innerHTML from an array of objects
  * @param {Array.<Object>} items - array of objects
  * @param {number} item.id - object's id
- * @param {string} image - object's image
+ * @param {string} item.image - object's image
  * @param {string} item.title - object's title
  * @param {string} item.description - object's description
  * @param {number} item.id- object's id

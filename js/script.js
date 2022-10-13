@@ -7,9 +7,7 @@ import { renderFeatured } from "./utils/renderedFeatured.js";
 import { displayMessage } from "./components/common/displayMessage.js";
 
 /**
- * createMenu displays menu
- * logoutButton logs out a user
- * getToken gets token from local storage
+
  * displayMessage displays a response to the user
  */
 
@@ -33,7 +31,10 @@ import { displayMessage } from "./components/common/displayMessage.js";
  * The name of the object
  */
 
+// createMenu displays menu
 createMenu();
+
+// logoutButton logs out a user
 logoutButton();
 
 const bannerUrl = baseUrl + "/home";

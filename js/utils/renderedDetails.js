@@ -1,13 +1,13 @@
 import { baseUrl } from "../settings/api.js";
 
 /**
- * Creates innerHTML from an objects
- * @param {Object} item - value of objects
- * @param {number} item.id - object's id
- * @param {string} image - object's image
- * @param {string} item.title - object's title
- * @param {string} item.description - object's description
- * @param {number} item.price - object's price
+ * Creates innerHTML from an object
+ * @param {Object} item - value of object
+ * @property {number} item.id - object's id
+ * @property {string} item.image - object's image
+ * @property {string} item.title - object's title
+ * @property {string} item.description - object's description
+ * @property {number} item.price - object's price
  * @example
  * renderedDetails(item)
  * Creates innerHTML that displays
