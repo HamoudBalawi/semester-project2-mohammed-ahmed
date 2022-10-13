@@ -95,11 +95,11 @@ function submitForm(event) {
 
 /**
  * updateProduct updates an object
- * @property {string} titleValue title of an object
- * @property {number} priceValue price of an object
- * @property {string} descriptionValue description of an object
- * @property {string} imageUrlValue image of an object
- * @property {number} idValue id of an object
+ * @param {string} titleValue title of an object
+ * @param {number} priceValue price of an object
+ * @param {string} descriptionValue description of an object
+ * @param {string} imageUrlValue image of an object
+ * @param {number} idValue id of an object
  * @example
  * updateProduct(title, price, description, imageUrl, id);
  * Displays a response to the user
@@ -136,6 +136,7 @@ async function updateProduct(title, price, description, image_url, id) {
     }
 
     if (result.error) {
+      // Displays a message to the user
       displayMessage("error", result.message, ".message-container");
     }
   } catch (error) {
