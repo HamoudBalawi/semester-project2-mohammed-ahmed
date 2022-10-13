@@ -3,8 +3,6 @@ import { getToken } from "../storage.js";
 
 /**
  * Deletes a product
- *
- *
  */
 
 const queryString = document.location.search;

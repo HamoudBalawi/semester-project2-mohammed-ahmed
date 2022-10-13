@@ -2,14 +2,13 @@ import { displayMessage } from "./displayMessage.js";
 import { baseUrl } from "../../settings/api.js";
 import { saveToken, saveUser } from "../storage.js";
 
-
+/**
+ * Logs in a user with a credetial
+ */
 const form = document.querySelector("form");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const message = document.querySelector(".message-container");
-
-
-
 
 form.addEventListener("submit", submitForm);
 
@@ -22,12 +21,7 @@ function submitForm(event) {
   const passwordValue = password.value.trim();
 
   if (usernameValue.length === 0 || passwordValue.length === 0) {
-    
-    return displayMessage(
-      "warning",
-      "Invalid username or password",
-      ".message-container"
-    );
+    return displayMessage("warning", "Invalid username or password", ".message-container");
   }
 
   doLogin(usernameValue, passwordValue);
@@ -48,22 +42,14 @@ async function doLogin(username, password) {
     const json = await response.json();
 
     if (json.user) {
-
       saveToken(json.jwt);
       saveUser(json.user);
       location.href = "admin.html";
     }
 
     if (json.error) {
-
-      displayMessage(
-        "warning",
-        "Invalid login username or password",
-        ".message-container"
-      );
+      displayMessage("warning", "Invalid login username or password", ".message-container");
     }
-
-   
   } catch (error) {
     console.log(error);
   }
