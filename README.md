@@ -26,6 +26,8 @@ Eco shoe is an e-commerce that provides ethically made products as a lot of cust
 - [HTML & CSS](https://html.com/)
 - [Google fonts](https://fonts.google.com/)
 
+* [![Next][next.js]][next-url]
+
 ## Getting Started
 
 ### Installing
