@@ -40,8 +40,11 @@ git clone https://github.com/HamoudBalawi/semester-project2-mohammed-ahmed
 
 To install, run the following commands:
 
-```
+```bash
 npm install
+# or
+npm install yarn
+
 ```
 
 ### develop
