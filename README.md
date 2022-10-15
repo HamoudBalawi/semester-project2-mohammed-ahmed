@@ -26,8 +26,6 @@ Eco shoe is an e-commerce that provides ethically made products as a lot of cust
 - [HTML & CSS](https://html.com/)
 - [Google fonts](https://fonts.google.com/)
 
-* [![Next][next.js]][next-url]
-
 ## Getting Started
 
 ### Installing
@@ -42,7 +40,7 @@ git clone https://github.com/HamoudBalawi/semester-project2-mohammed-ahmed
 
 2. Install the dependencies:
 
-To install strapi locally, run the followinf commands:
+To install strapi locally, run the following commands:
 
 ```
 npm install
