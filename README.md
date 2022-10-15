@@ -46,7 +46,7 @@ To install strapi locally, run the following commands:
 npm install
 ```
 
-### developing
+### develop
 
 To develop, run the following commands:
 
