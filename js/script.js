@@ -6,10 +6,8 @@ import { createMenu } from "./components/common/menu.js";
 import { renderFeatured } from "./utils/renderedFeatured.js";
 import { displayMessage } from "./components/common/displayMessage.js";
 
-/**
-
- * displayMessage displays a response to the user
- */
+createMenu();
+logoutButton();
 
 /**
  * createBanner Creates innerHTML from an object
@@ -19,23 +17,6 @@ import { displayMessage } from "./components/common/displayMessage.js";
  * Creates innerHTML that displays
  * The image of an object
  */
-
-/**
- * renderExclusive & renderFeatured Creates innerHTML from an array of objects
- * @param {Array.<Object>} url - array of objects
- * * @example
- * fetch(item)
- * Creates innerHTML that displays
- * The image of an object
- * The title of an object
- * The name of the object
- */
-
-// createMenu displays menu
-createMenu();
-
-// logoutButton logs out a user
-logoutButton();
 
 const bannerUrl = baseUrl + "/home";
 
@@ -51,6 +32,17 @@ async function createBanner() {
   }
 }
 createBanner();
+
+/**
+ * renderExclusive & renderFeatured Creates innerHTML from an array of objects
+ * @param {Array.<Object>} url - array of objects
+ * * @example
+ * fetch(item)
+ * Creates innerHTML that displays
+ * The image of the objects
+ * The title of the objects
+ * The name of the objects
+ */
 
 const url = baseUrl + "/products";
 

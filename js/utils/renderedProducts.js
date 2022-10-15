@@ -1,11 +1,12 @@
 import { baseUrl } from "../settings/api.js";
+
 /**
  * Creates innerHTML from an array of objects
  * @param {Array.<Object>} items - array of objects
- * @param {number} item.id - object's id
- * @param {string} image - object's image
- * @param {string} item.title - object's title
- * @param {number} item.price - object's price
+ * @property {number} item.id - object's id
+ * @property {string} item.image - object's image
+ * @property {string} item.title - object's title
+ * @property {number} item.price - object's price
  * @example
  * renderedProducts(items)
  * Creates innerHTML that displays

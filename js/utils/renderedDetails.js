@@ -2,7 +2,7 @@ import { baseUrl } from "../settings/api.js";
 
 /**
  * Creates innerHTML from an object
- * @param {Object} item - value of object
+ * @param {Object} item - properties of object
  * @property {number} item.id - object's id
  * @property {string} item.image - object's image
  * @property {string} item.title - object's title

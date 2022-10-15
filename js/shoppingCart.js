@@ -1,9 +1,14 @@
-import { fetchStoredProducts} from "./components/storage.js"
+import { fetchStoredProducts } from "./components/storage.js";
 import { createMenu } from "./components/common/menu.js";
 import { logoutButton } from "./components/common/logout.js";
 
-createMenu()
-logoutButton()
+createMenu();
+logoutButton();
+
+/**
+ * CartItems creates innerHTML from objects
+ *
+ */
 
 const cartItems = fetchStoredProducts();
 
@@ -12,12 +17,11 @@ const totalPrice = document.querySelector(".total");
 
 let total = 0;
 
-if(cartItems.length === 0){
+if (cartItems.length === 0) {
   container.innerHTML = "Cart is empty";
 }
 
 cartItems.forEach(function (cartItem) {
- 
   total += parseInt(cartItem.price);
 
   container.innerHTML += `
@@ -37,5 +41,4 @@ cartItems.forEach(function (cartItem) {
 totalPrice.innerHTML = `Total: ${total} kr
                         <div class="py-3">
                           <button class="btn btn-primary">Check Out</button>
-                        </div>`
-
+                        </div>`;

@@ -5,15 +5,12 @@ import { displayMessage } from "./components/common/displayMessage.js";
 import { buttonDelete } from "./components/common/deleteProduct.js";
 import { logoutButton } from "./components/common/logout.js";
 
-// getToken gets token from local storage
 const token = getToken();
 if (!token) {
   location.href = "/";
 }
-// createMenu displays menu
-createMenu();
 
-// logoutButton logs out a user
+createMenu();
 logoutButton();
 
 /**
@@ -101,7 +98,7 @@ function submitForm(event) {
  * @param {string} imageUrlValue image of an object
  * @param {number} idValue id of an object
  * @example
- * updateProduct(title, price, description, imageUrl, id);
+ * updateProduct(title, price, description, image, id);
  * Displays a response to the user
  * // Product updated on succuss or an error occured on error
  */
@@ -136,7 +133,6 @@ async function updateProduct(title, price, description, image_url, id) {
     }
 
     if (result.error) {
-      // Displays a message to the user
       displayMessage("error", result.message, ".message-container");
     }
   } catch (error) {

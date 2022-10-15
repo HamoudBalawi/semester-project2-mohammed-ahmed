@@ -6,22 +6,15 @@ import { displayMessage } from "./components/common/displayMessage.js";
 import { logoutButton } from "./components/common/logout.js";
 
 /**
- * createMenu displays menu
- * logoutButton logs out a user
- * getToken gets token from local storage
- * displayMessage displays a response to the user
- */
-
-/**
  * createProducts Creates innerHTML from an array of objects
  * @param {Array.<Object>} url - array of objects
  * * @example
  * fetch(item)
  * Creates innerHTML that displays
- * The image of an object
- * The title of an object
- * The id of the object
- * The description of the object
+ * The image of the objects
+ * The title of the objects
+ * The id of the objects
+ * The description of the objects
  */
 
 createMenu();

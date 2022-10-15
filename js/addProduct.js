@@ -4,14 +4,26 @@ import { createMenu } from "./components/common/menu.js";
 import { logoutButton } from "./components/common/logout.js";
 import { getToken } from "./components/storage.js";
 
-createMenu()
-logoutButton()
-
+createMenu();
+logoutButton();
 
 const token = getToken();
 if (!token) {
   location.href = "/";
 }
+
+/**
+ * addProduct adds an object
+ * @param {string} titleValue title of an object
+ * @param {number} priceValue price of an object
+ * @param {string} descriptionValue description of an object
+ * @param {string} imageValue image of an object
+ * @param {boolean} checkboxValue checkbox of an object
+ * @example
+ * addProduct(title, price, description, image, checkbox);
+ * Displays a response to the user
+ * // Product added on - succuss or an error occured on - error
+ */
 
 const message = document.querySelector(".message-container");
 const form = document.querySelector("form");
@@ -20,7 +32,6 @@ const price = document.querySelector("#price");
 const description = document.querySelector("#description");
 const image = document.querySelector("#file");
 const checkbox = document.querySelector("#inlineCheckbox1");
-
 
 form.addEventListener("submit", submitForm);
 function submitForm(event) {
@@ -31,25 +42,18 @@ function submitForm(event) {
   const titleValue = title.value.trim();
   const priceValue = price.value.trim();
   const descriptionValue = description.value.trim();
-  const imageValue = image.value.trim()
-  const checkboxValue = checkbox.checked
+  const imageValue = image.value.trim();
+  const checkboxValue = checkbox.checked;
 
- 
   if (titleValue.length === 0 || priceValue.length === 0 || descriptionValue.length === 0 || imageValue.length === 0) {
-    return displayMessage(
-      "warning",
-      "Please supply proper values",
-      ".message-container"
-    );
+    return displayMessage("warning", "Please supply proper values", ".message-container");
   }
 
-  addProduct(titleValue, priceValue, descriptionValue, imageValue, checkboxValue ) ;
+  addProduct(titleValue, priceValue, descriptionValue, imageValue, checkboxValue);
 }
 
 async function addProduct(title, price, description, image, checkbox) {
-  
   const apiUrl = baseUrl + "/products";
-
 
   const data = JSON.stringify({
     title: title,

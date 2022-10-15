@@ -3,10 +3,9 @@
  * @param {string} messageType the first value
  * @param {string} message the second value
  * @param {string} targetElement the third value
- * @param {function} displayMessage Displays a message to the user
  * @example
  * displayMessage("warning", "Please supply proper values", ".message-container");
- * Displays a response to the user
+ * Creates innerHTML that displays
  * // Please supply proper values
  */
 

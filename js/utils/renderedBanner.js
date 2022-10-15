@@ -1,10 +1,10 @@
 import { baseUrl } from "../settings/api.js";
 
 /**
- * Creates innerHTML from an array of objects
- * @param {Object} item - array of objects
- * @param {string} backgroudImage - object's image
- * @param {string} item.title - object's title
+ * Creates innerHTML from an object
+ * @param {Object} item - values of object
+ * @property {string} item.backgroudImage - object's image
+ * @property {string} item.title - object's title
  * @example
  * rendereBanner(item)
  * Creates innerHTML that displays

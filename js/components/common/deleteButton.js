@@ -2,7 +2,7 @@ import { baseUrl } from "../../settings/api.js";
 import { getToken } from "../storage.js";
 
 /**
- * Deletes a product
+ * deleteButton deletes an object
  */
 
 const queryString = document.location.search;

@@ -6,6 +6,14 @@ import { logoutButton } from "./components/common/logout.js";
 
 /**
  * fetchProduct creates innerHTML from an object
+ * @param {Object} url - object
+ * * @example
+ * fetch(url)
+ * Creates innerHTML that displays
+ * The image of an object
+ * The title of an object
+ * The name of an object
+ * The price of an object
  */
 
 createMenu();

@@ -3,8 +3,14 @@ import { baseUrl } from "../../settings/api.js";
 import { saveToken, saveUser } from "../storage.js";
 
 /**
- * Logs in a user with a credetial
+ * doLogin Logs in a user
+ * @param {string} usernameValue value of username
+ * @param {string} passwordValue value of password
+ * @example
+ * doLogin(name, password);
+ * // Redirects a user to admin page on - succuss or display Invalid login username or password on - error
  */
+
 const form = document.querySelector("form");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
