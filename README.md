@@ -2,7 +2,7 @@
 
 ![](image/eco-shoe.jpg)
 
-A simple overview of the use/purpose of the project.
+Eco shoe with an e-commerce that provides ethicality made products.
 
 ## Description
 
