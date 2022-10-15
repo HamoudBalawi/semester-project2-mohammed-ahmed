@@ -30,8 +30,6 @@ Eco shoe is an e-commerce that provides ethically made products as a lot of cust
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
@@ -40,7 +38,7 @@ git clone https://github.com/HamoudBalawi/semester-project2-mohammed-ahmed
 
 2. Install the dependencies:
 
-To install strapi locally, run the following commands:
+To install, run the following commands:
 
 ```
 npm install
