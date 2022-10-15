@@ -46,13 +46,34 @@ To install strapi locally, run the following commands:
 npm install
 ```
 
-### Running
+### developing
 
-To run the strapi, run the following commands:
+To develop, run the following commands:
 
 ```bash
 npm run develop
+# or
+yarn run develop
+```
+
+### start
+
+To start, run the following commands:
+
+```bash
+npm run strat
+# or
+yarn start
+```
+
+### build
+
+To build, run the following commands:
+
+```bash
 npm run start
+# or
+yarn run start
 ```
 
 The admin panel will open at `http://localhost:1337/admin`.
