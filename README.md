@@ -33,21 +33,24 @@ git clone https://github.com/HamoudBalawi/semester-project2-mohammed-ahmed
 
 2. Install the dependencies:
 
-Bootstrap
+To install strapi locally use:
 
 ```
-npm install bootstrap@v4.5.3
+npm install
+npm run develop
 ```
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
+To run the strapi, run the following commands:
 
 ```bash
 npm run start
 ```
+
+The admin panel will open at `http://localhost:1337/admin`.
+
+If you get a warning about not being able to use port 1337, check that no other Strapi instances are running in another command line or terminal.
 
 ## Contributing
 
@@ -60,24 +63,3 @@ This is where you can leave your social links for people to contact you, such as
 [My Twitter page](www.twitter.com)
 
 [My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
-
-# Strapi Project
-
-To run the project:
-
-```
-npm install
-npm run develop
-```
-
-The admin panel will open at `http://localhost:1337/admin`.
-
-If you get a warning about not being able to use port 1337, check that no other Strapi instances are running in another command line or terminal.
