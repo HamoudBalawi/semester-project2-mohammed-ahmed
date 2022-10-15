@@ -44,7 +44,6 @@ To install strapi locally, run the following commands:
 
 ```
 npm install
-npm run develop
 ```
 
 ### Running
@@ -52,6 +51,7 @@ npm run develop
 To run the strapi, run the following commands:
 
 ```bash
+npm run develop
 npm run start
 ```
 
