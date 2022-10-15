@@ -1,6 +1,6 @@
 # Eco shoe
 
-![](image/eco-shoe.png)
+![](image/eco-shoe.jpg)
 
 A simple overview of the use/purpose of the project.
 
