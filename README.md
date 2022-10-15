@@ -2,7 +2,7 @@
 
 ![](image/eco-shoe.jpg)
 
-Eco shoe with an e-commerce that provides ethicality made products.
+Eco shoe is an e-commerce that provides ethicality made products.
 
 ## Description
 
