@@ -2,17 +2,14 @@
 
 ![](image/eco-shoe.jpg)
 
-Eco shoe is an e-commerce that provides ethicality made products.
+Eco shoe is an e-commerce that provides ethically made products.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+Eco shoe is an e-commerce that provides ethically made products as a lot of customers are getting concerned about how materials are being processed and made in concern with world pollution.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+- To provide a good quality products
+- To fight environmental pollution
 
 ## Built With
 
