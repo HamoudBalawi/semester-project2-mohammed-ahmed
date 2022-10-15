@@ -4,6 +4,13 @@
 
 Eco shoe is an e-commerce that provides ethically made products.
 
+### Table of Contents
+
+- [Description](#description)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+- [Contact](#contact)
+
 ## Description
 
 Eco shoe is an e-commerce that provides ethically made products as a lot of customers are getting concerned about how materials are being processed and made in concern with world pollution.
@@ -33,7 +40,7 @@ git clone https://github.com/HamoudBalawi/semester-project2-mohammed-ahmed
 
 2. Install the dependencies:
 
-To install strapi locally use:
+To install strapi locally, run the followinf commands:
 
 ```
 npm install
