@@ -13,10 +13,8 @@ Eco shoe is an e-commerce that provides ethically made products as a lot of cust
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com)
+- [Strapi](https://strapi.io/)
 
 ## Getting Started
 
