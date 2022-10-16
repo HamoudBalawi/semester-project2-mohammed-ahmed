@@ -1,6 +1,7 @@
-# Eco shoe
+# Semester project 2
 
 ![](image/eco-shoe.jpg)
+### ECO
 
 Eco shoe is an e-commerce that provides ethically made products.
 
