@@ -35,16 +35,6 @@ Eco shoe is an e-commerce that provides ethically made products as a lot of cust
 ```bash
 git clone https://github.com/HamoudBalawi/semester-project2-mohammed-ahmed
 ```
-2. Install the dependencies:
-
-To install NPM packages, run the following commands:
-
-```bash
-npm install
-# or
-npm install yarn
-
-```
 
 ## Contact
 
